@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bootstrap</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Fontawesome CSS -->
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	<style>
+		.mx-h-70{
+			max-height: 50px;
+		}
+		.nav-link{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-light bg-light navbar-expand-lg shadow sticky-top">
+		<a href="#" class="navbar-brand"><img src="https://satech360.com/wp-content/uploads/2020/10/logo.png" alt="!" class="mx-h-70"></a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navTest">
+		    <span class="navbar-toggler-icon"></span>
+		 </button>
+
+		<div class="collapse navbar-collapse" id="navTest">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a href="#" class="nav-link">Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Services</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Shop</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">About US</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Contact US</a>
+			</li>
+		</ul>
+		</div>	
+	</nav>
+	<!-- form -->
+	<div class="container my-5">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<div class="card">
+					<div class="card-header">
+						<h2 class="card-title text-center">Registration</h2>
+					</div>
+					<div class="card-body">
+						<form action="#">
+							<div class="form-group">
+								<label for="name">Username <sup class="text-danger">*</sup></label>
+								<input type="text" name="name" id="name" class="form-control" placeholder="Please Enter name">
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" name="email" id="email" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="country">Country</label>
+								<select name="country" id="country" class="form-control">
+									<option value="bn">Bangladesh</option>
+									<option value="pk">Pakistan</option>
+									<option value="in">India</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="msg">Msg</label>
+								<textarea name="" id="msg" cols="30" rows="5" class="form-control"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="image">Image</label>
+								<input type="file" name="image" id="image" class="form-control">
+							</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-success">Register</button>
+								<button class="btn btn-danger" type="reset">Clear</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Jquery-3.5.1 JS -->
+	<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+	<!-- Popper JS -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
